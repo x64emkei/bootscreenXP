@@ -1,0 +1,271 @@
+/* BootScreenXP Legacy Theme
+   CSS 2.0-era techniques only: IE6/7/8 friendly. */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3f75b5 url("images/splash.bmp") center top no-repeat;
+    background-attachment: fixed;
+    color: #17324d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#page {
+    width: 960px;
+    margin: 22px auto;
+    background: #f3f7fb;
+    border: 1px solid #174d85;
+    border-top: 5px solid #e77d00;
+}
+
+#header {
+    height: 205px;
+    overflow: hidden;
+    background: #0d3c82;
+}
+
+#header-image {
+    width: 960px;
+    height: 480px;
+    margin-top: -22px;
+    display: block;
+    border: 0;
+}
+
+#nav {
+    height: 38px;
+    background: #063f78;
+    border-top: 1px solid #75a6d7;
+    border-bottom: 3px solid #e77d00;
+    padding-left: 12px;
+}
+
+#nav a {
+    display: block;
+    float: left;
+    margin: 6px 4px 0 0;
+    padding: 4px 18px;
+    color: #ffffff;
+    background: #0b5b99;
+    border: 1px solid #73a8d4;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#nav a:hover,
+#nav a.active {
+    background: #e77d00;
+    color: #ffffff;
+    border-color: #ffbd68;
+}
+
+.content {
+    padding: 20px 22px 25px 22px;
+    background: #eef4fa;
+}
+
+.main {
+    width: 650px;
+    float: left;
+}
+
+.main.full {
+    width: 100%;
+}
+
+.side {
+    width: 215px;
+    float: right;
+    padding: 0 0 10px 0;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0 0 3px 0;
+    padding: 0;
+    color: #0a4f8e;
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin: 0 0 18px 0;
+    padding: 5px 12px;
+    width: 420px;
+    background: #07548f;
+    border-top: 1px solid #8ab5dc;
+    border-bottom: 2px solid #e77d00;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+h2 {
+    margin: 20px 0 6px 0;
+    color: #0a4f8e;
+    font-size: 18px;
+    border-bottom: 1px solid #9bb9d3;
+}
+
+p {
+    margin: 7px 0 12px 0;
+}
+
+a {
+    color: #075b9e;
+}
+
+a:hover {
+    color: #e36f00;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+.notice {
+    margin: 18px 0;
+    padding: 10px 13px;
+    background: #fff7e8;
+    border: 1px solid #e0a75b;
+    color: #5e401d;
+}
+
+.side-title {
+    padding: 5px 9px;
+    color: #ffffff;
+    background: #07548f;
+    border-bottom: 2px solid #e77d00;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.side-title.gap {
+    margin-top: 18px;
+}
+
+.button {
+    display: block;
+    margin-top: 4px;
+    padding: 6px 9px;
+    background: #dceaf7;
+    border: 1px solid #9ab8d2;
+    color: #0a4f8e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #f4d3a8;
+    border-color: #e77d00;
+}
+
+.check {
+    margin: 7px 0;
+    padding-left: 25px;
+}
+
+.step {
+    position: relative;
+    min-height: 62px;
+    margin: 0 0 10px 0;
+    padding: 9px 12px 9px 60px;
+    background: #ffffff;
+    border: 1px solid #b8cfe3;
+}
+
+.step h2 {
+    margin: 0 0 4px 0;
+    border: 0;
+    font-size: 16px;
+}
+
+.step p {
+    margin: 0;
+}
+
+.number {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    width: 32px;
+    height: 32px;
+    padding-top: 7px;
+    text-align: center;
+    background: #0a5795;
+    border: 1px solid #0a3f6d;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info {
+    width: 70%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.info th,
+.info td {
+    padding: 7px 9px;
+    border: 1px solid #b8cfe3;
+    text-align: left;
+}
+
+.info th {
+    width: 170px;
+    background: #dceaf7;
+    color: #0a4f8e;
+}
+
+#footer {
+    padding: 12px 20px;
+    background: #0b477e;
+    border-top: 3px solid #e77d00;
+    color: #d9e9f7;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* Simple IE6-friendly fixes */
+* html #page {
+    height: 1%;
+}
+
+* html .step {
+    height: 62px;
+}
+
+* html #nav a {
+    display: inline;
+}
+
+@media screen and (max-width: 980px) {
+    #page {
+        width: 94%;
+    }
+
+    #header-image {
+        width: 800px;
+        height: 400px;
+        margin-top: 0;
+    }
+
+    .main {
+        width: 68%;
+    }
+
+    .side {
+        width: 26%;
+    }
+}
